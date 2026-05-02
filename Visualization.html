@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Project Visualization</title>
+        <meta name = "author" content = "Logan Young">
+        <meta name = "date_created" content = "04/29/2026">
+        <meta charset="utf-8">
+        <script type = "text/javascript" src = "js/d3/d3.v7.js"></script>
+        <!-- <script type = "module" src = "js/d3/d3-fetch.js"></script> -->
+        <link rel = "stylesheet" type = "text/css" href = "css/global.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/visualization.css">
+        <link rel="icon" type="image/x-icon" href="data:,">
+    </head>
+    <body>
+        <header id = "Header">
+            <h1 id = "Title">Interactive Pokémon Data Visualization</h1>
+            <nav id = "NavBar">
+                <a href = "Visualization.html" id = "VisualizationLink" class = "pageLink">Visualization</a>
+                <a href = "Documentation.html" id = "DocumentationLink" class = "pageLink">Documentation</a>
+            </nav>
+        </header>
+
+        <div id = "Content">
+            <!-- <svg id = "Visualization" height = "100%" width = "100%" viewbox = "0 0 400 100"></svg> -->
+            <div id = "SVGWindow">
+                <!-- <div id = "Infobox"></div> -->
+            </div>
+            <div id="AdditionalText">
+                <p class = "strong">Click a point on the graph for more information!</p>
+            </div>
+            <div id = "Filters">
+                <div id = "TypeChecks">
+                    <p>Filter by Type: </p>
+                    <input type="checkbox" id="SelectAllTypes" name="TypeCheck" value="All" class="typeCheck selectAll"/>
+                        <label for="SelectAllTypes">Select All</label>
+                </div>
+                <div id = "GenerationChecks">
+                    <p>Filter by Generation: </p>
+                    <input type="checkbox" id="SelectAllGens" name="GenCheck" value="All" class="genCheck selectAll"/>
+                        <label for="SelectAllGens">Select All</label>
+                </div>
+            </div>
+        </div>
+
+        <footer id = "Footer">
+            <p id = "FooterText">Made by Logan Young for NEWM-N328 "Visualizing Info" Final Project</p>
+            <p id = "DateLastModified">Date last modified: <time datetime="2026-05-01">May 1st, 2026</time></p>
+        </footer>
+
+        <script type = "text/javascript" src = "js/Visualization.js"></script>
+    </body>
+</html>

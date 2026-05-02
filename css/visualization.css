@@ -1,0 +1,84 @@
+#SVGWindow {
+    border-radius: 1px;
+    border-color: black;
+    border-style: solid;
+    align-content: center;
+    position: relative;
+}
+
+svg .pokemonNames {
+    visibility: hidden;
+    fill: black;
+}
+
+.pokemon {
+    opacity: 0.7;
+}
+
+svg circle:hover + .pokemonNames, svg .pokemonNames:hover {
+    visibility: visible;
+}
+
+.axis {
+    font-size: 5px;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 5px;
+}
+
+.axisLabel {
+    font-size: 7px;
+}
+
+label {
+    border-radius: 3px;
+    background-color: white;
+    padding: 2px;
+    margin: 2px;
+}
+
+.gridline {
+    shape-rendering: crispEdges;
+    stroke-width: 0.3;
+    opacity: 25%;
+}
+
+#Infobox, #InfoboxClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40%;
+    width: 20%;
+    opacity: 50%;
+}
+
+#Infobox {
+    overflow: scroll;
+    background-color: #c4e673;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 2px;
+}
+
+#InfoboxClose {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 90%;
+    height: 20%;
+}
+
+.openedInfobox {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 0.3));
+}
